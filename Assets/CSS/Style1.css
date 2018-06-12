@@ -4,107 +4,67 @@ html {
   height: 100%; 
   overflow: auto; 
 }
-body {
-  background-image: url("../Images/bg1.jpg");
+body, html {
+    height: 100%
 }
-.myowncssbtn{
-	background-color: lightgreen;
-	border: 2px solid lightgrey;
+
+
+.bgimg {
+    /* Background image */
+    background-image: url('../Images/welcome.jpg');
+    /* Full-screen */
+    height: 100%;
+    /* Center the background image */
+    background-position: center;
+    /* Scale and zoom in the image */
+    background-size: cover;
+    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+    position: relative;
+    /* Add a vlack text color to all elements inside the .bgimg container */
+    color: black;
+    /* Add a font */
+    font-family: 'Amatic SC', cursive;
+    /* Set the font-size to 25 pixels */
+    font-size: 50px;
 }
-.myowncssbtn:hover{
-	background-color: lightgrey;
-	border: 2px solid green;
-	cursor: pointer;
+
+/* Position text in the top-left corner */
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
 }
-.startup{
-  position: relative;
-  background-position: center;
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+
+/* Position text in the middle */
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Style the <hr> element */
+hr {
+    margin: auto;
+    width: 40%;
+}.bgimg{
   background-image: url("../Images/welcome.jpg");
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover;
-  height: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; 
 }
-hr{
-	background-color: white;
-	width: 100%;
+img{
+  height: 250px;
 }
-.head{
-    font-family: 'Hi Melody', cursive;
+#link{
+    color: black;
 }
-#cpyrgtp{
-  font-size: 25px;
-  color: white;
+#link a{
+    color: black;
 }
-.img1{
-  border:5px solid black;
-  width: 50%;
-  height: 50%;
-  left: 0px;
-  right: 0px;
-  margin: auto;
-}
-.downloadcards{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-around;
-  margin : 50px 50px 50px 50px;
-}
-.dt1{
-  background-image: url("../Images/1.jpg");
-  background-position: center;
-  background-repeat: no-repeat; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; 
-}
-.dt2{
-  background-image: url("../Images/2.jpg");
-  background-position: center;
-  background-repeat: no-repeat; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-
-
-
-
-
-
-
-
-
-.single-project-container{width: 100%; height: 230px; position: relative; z-index: 50; background: #fff; border-bottom: 1px solid #f1f1f1; overflow: hidden; background-repeat:no-repeat; background-size:cover; background-position:center;}
-.single-project-container:nth-child(1){border-top:1px solid #f1f1f1;}
-.single-project-container.spotzer{background-image:url(/wp-content/uploads/2017/12/project1-spotzer.jpg);}
-.single-project-container.kyi{background-image:url(/wp-content/uploads/2017/12/project2-kill-your-Idols.jpg);}
-.single-project-container.logofolio{background-image:url(/wp-content/uploads/2017/12/project3-logofolio.jpg);}
-.single-project-container.artworks{background-image:url(/wp-content/uploads/2017/12/project4-random-artworks.jpg);}
-.single-project-container.bolgheri{background-image:url(/wp-content/uploads/2017/12/project5-bolgheri.jpg);}
-.single-project-container.elianto{background-image:url(/wp-content/uploads/2017/12/project6-elianto.jpg);}
-.single-project-container.limo-services{background-image:url(/wp-content/uploads/2017/12/project7-limo-services.jpg);}
-.single-project-container.fotolia10{background-image:url(/wp-content/uploads/2017/12/project8-fotolia10-contest.jpg);}
-.single-project-container.isd{background-image:url(/wp-content/uploads/2017/12/project9-ISD.jpg);}
-.single-project-container a{width: 100%; height: 100%; position: relative; z-index:10; text-decoration:none; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-flex-flow: column wrap; -ms-flex-flow: column wrap; flex-flow: column wrap;}
-.single-project-container a h4{padding-left: 15vw; margin-left: 0; position: relative; -webkit-transition: .5s ease all; transition: .5s ease all; will-change: transition; margin-bottom:0px; margin-top:0px;}
-.single-project-container:hover a h4{color: rgba(255,255,255,1); padding-left: 18vw;}
-.single-project-container a p{font-size: 13px; color: #6A6B6F; opacity: .8; display: block; padding-left: 15vw; margin-bottom:0px; -webkit-transition: .5s ease all; transition: .5s ease all;}
-.single-project-container:hover a p{ color: rgba(255,255,255,.8); padding-left: 18vw;}
-.single-project-container a .fa{position: absolute; top: 48%; font-size:28px; right: 17vw; opacity: 1; -webkit-transition: .375s ease all; transition: .375s ease all; color: rgba(0,0,0,.7);}
-.single-project-container a .fa:before{position:absolute; top:0; left:0; z-index:100; width:50px; text-align:center;}
-.single-project-container a .fa:after{content:''; color:#202020; width:50px; height:50px; background-color: #00A8E8; position:absolute; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; top:-12px; -webkit-transition: .375s ease all; transition: .375s ease all; transform: scale(0); -ms-transform: scale(0); -webkit-transform: scale(0);}
-.single-project-container:hover a .fa{color: rgba(255,255,255,1);}
-.single-project-container:hover a .fa:after{transform: scale(1); -ms-transform: scale(1); -webkit-transform: scale(1);}
-.single-project-container:before, .single-project-container:after{content:''; position:absolute; left:0; top:0; height:100%; -webkit-transition: .375s ease all; transition: .375s ease all;}
-.single-project-container:before{z-index:1; width:100vw; background-color:#fff;}
-.single-project-container:after{z-index:2; width:0; background-color:rgba(28,32,32,0.7);}
-.single-project-container:hover:before{-ms-transform: translateX(100%); -webkit-transform: translateX(100%); transform: translateX(100%);}
-.single-project-container:hover:after{width:100vw;}
