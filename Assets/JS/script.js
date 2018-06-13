@@ -42,7 +42,7 @@ function gettimefunc(tilldate,id){
 	}, 1000);
 }
 
-var countdown = gettimefunc("Dec 31,2018 00:00:00","welcome");//Change Date in the format Month Date , Year HH:MM:SS
+var countdown = gettimefunc("Nov 30,2018 00:00:00","welcome");//Change Date in the format Month Date , Year HH:MM:SS
 
 
 
