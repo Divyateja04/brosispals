@@ -32,7 +32,7 @@ function gettimefunc(tilldate,id){
 	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 	  // Display the result in the element with id="demo"
-	  document.getElementById(id).textContent = "It Opens in " + days + " Days " + hours + " Hours "
+	  document.getElementById(id).textContent = "This Opens in " + days + " Days " + hours + " Hours "
 	  + minutes + " Minutes " + seconds + " Seconds ";
 	  // If the count down is finished, write some text 
 	  if (distance < 0) {
@@ -43,6 +43,7 @@ function gettimefunc(tilldate,id){
 }
 
 var countdown = gettimefunc("Dec 31,2018 00:00:00","welcome");//Change Date in the format Month Date , Year HH:MM:SS
-console.log(countdown);
+
+
 
 
