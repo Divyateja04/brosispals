@@ -4,11 +4,6 @@ html {
   height: 100%; 
   overflow: auto; 
 }
-body, html {
-    height: 100%
-}
-
-
 .bgimg {
     /* Background image */
     background-image: url('../Images/welcome.jpg');
@@ -25,7 +20,7 @@ body, html {
     /* Add a font */
     font-family: 'Amatic SC', cursive;
     /* Set the font-size to 25 pixels */
-    font-size: 50px;
+    font-size: 2em;
 }
 
 
@@ -43,8 +38,17 @@ hr {
     margin: auto;
     width: 40%;
 }
+
+
 img{
-  height: 3em;
+    height: 15em;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    z-index: 3;
 }
 #link{
     color: black;
@@ -57,31 +61,36 @@ body {
     font-family: Arial;
     color: white;
 }
+
+
 /*Slide Layer*/
 .split {
     height: 50%;
     width: 50%;
     position: fixed;
     z-index: 0;
-    top: 0;
     overflow-x: hidden;
     padding-top: 20px;
 }
 .left {
     left: 0;
 }
+
 .right {
     right: 0;
     background-color: black;
 }
-/*.bleft {
+.bleft {
     left: 0;
+    bottom:0;
+    background-color: black;
 }
+
 .bright {
     right: 0;
     bottom:0;
     background-color: black;
-}*/
+}
 .centered {
     position: absolute;
     top: 50%;
@@ -115,12 +124,13 @@ body {
 }
 .container1:hover .overlay1 {
   width: 50%;
+  left: 0;
 }
 .overlay2 {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #008CBA;
+  background-color: green;
   overflow: hidden;
   width: 0;
   height: 50%;
@@ -135,7 +145,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008CBA;
+  background-color: red;
   overflow: hidden;
   width: 0;
   height: 50%;
@@ -143,12 +153,13 @@ body {
 }
 .container3:hover .overlay3 {
   width: 50%;
+  left: 0;
 }
 .overlay4 {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: #008CBA;
+  background-color: yellow;
   overflow: hidden;
   width: 0;
   height: 50%;
@@ -158,7 +169,6 @@ body {
   width: 50%;
   right: 0;
 }
-
 
 
 

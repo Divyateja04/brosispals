@@ -2,11 +2,11 @@ function welcome() {
 	var time = new Date().getHours();
 	var greeting;
 	if (time < 12) {
-		greeting = "A Very Warm Good Morning !"
+		greeting = "A Very Warm Good Morning"
 	}else if (time >= 12 && time <= 16) {
-		greeting = "A Very Warm Good After Noon !"
+		greeting = "A Very Warm Good After Noon"
 	}else if(time > 16){
-		greeting = "A Very Warm Good Evening !"
+		greeting = "A Very Warm Good Evening"
 	}else{
 		greeting = "";
 	}
